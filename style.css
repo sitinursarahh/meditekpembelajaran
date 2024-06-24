@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.quiz-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Pusatkan elemen secara vertikal */
+  padding: 20px;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #eee69c; /* Ganti dengan warna yang Anda inginkan */
+}
+
+.hero {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  margin-top: 0;
+}
+
+.hero p {
+  margin-bottom: 0;
+}
+
+.content {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  margin-top: 0;
+}
+
+.content iframe {
+  width: 100%;
+  height: 500px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.cta-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #308834;
+}
+
+.features {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.features .feature {
+  display: inline-block;
+  width: 30%;
+  margin: 20px;
+  vertical-align: top;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features .feature a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.features .feature img {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.features .feature h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.features .feature p {
+  margin: 10px 0;
+  font-size: 0.9em;
+}
+
+.features .feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-section {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.quiz-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  max-width: 600px;
+  width: 100%;
+}
+
+.quiz-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.quiz-section p {
+  margin-bottom: 10px;
+}
+
+.answers {
+  margin-bottom: 20px;
+}
+
+.answers label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.answers input[type="radio"] {
+  margin-right: 10px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Result styles */
+#quiz-results {
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+
+#quiz-results p {
+  margin-bottom: 10px;
+}
+
+.correct-answer {
+  background-color: #a5d6a7;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.wrong-answer {
+  background-color: #ef9a9a;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+footer {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
